@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.4" />
+    <PackageReference Include="Mapster" Version="7.2.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.14.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ApplicationUser\Commands\Create\" />
+    <Folder Include="ApplicationUser\Commands\Delete\" />
+    <Folder Include="ApplicationUser\Commands\Update\" />
+    <Folder Include="NotificationTypes\Queries\" />
+    <Folder Include="People\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MagiClick.Domain\MagiClick.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

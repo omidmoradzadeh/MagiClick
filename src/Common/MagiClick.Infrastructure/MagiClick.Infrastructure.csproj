@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Files\Maps\**" />
+    <EmbeddedResource Remove="Files\Maps\**" />
+    <None Remove="Files\Maps\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Files\CsvFileBuilder.cs" />
+    <Compile Remove="Persistence\Configurations\CityConfiguration.cs" />
+    <Compile Remove="Persistence\Configurations\DistrictConfiguration.cs" />
+    <Compile Remove="Persistence\Configurations\VillageConfiguration.cs" />
+    <Compile Remove="Persistence\Migrations\20201123170347_CreateDb.cs" />
+    <Compile Remove="Persistence\Migrations\20201123170347_CreateDb.Designer.cs" />
+    <Compile Remove="Services\OpenWeatherService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
+    <Folder Include="Persistence\Migrations\" />
+    <Folder Include="src\Common\obj\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MagiClick.Application\MagiClick.Application.csproj" />
+  </ItemGroup>
+
+</Project>

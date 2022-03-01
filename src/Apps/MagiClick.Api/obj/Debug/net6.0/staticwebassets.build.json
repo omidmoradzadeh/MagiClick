@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GO4YaAc4XcSzTIs6ko6e/hC6lfgOgJzXkVkOI60xRsw=",
+  "Source": "MagiClick.Api",
+  "BasePath": "_content/MagiClick.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MagiClick.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MagiClick.Api.Controllers.BaseApiController">
+            <summary>
+            Base api controller
+            </summary>
+        </member>
+        <member name="P:MagiClick.Api.Controllers.BaseApiController.Mediator">
+            <summary>
+            Mediator sender
+            </summary>
+        </member>
+        <member name="T:MagiClick.Api.Controllers.LoginController">
+            <summary>
+            Login
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.LoginController.Login(MagiClick.Application.ApplicationUser.Queries.GetToken.GetTokenQuery,System.Threading.CancellationToken)">
+            <summary>
+            Login and get JWT token email: admin@admin.com password: Admin_1988
+            </summary>
+            <param name="query"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagiClick.Api.Controllers.NotificationController">
+            <summary>
+            Notification
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.NotificationController.PostPersonNotifications(MagiClick.Application.Notification.Commands.Post.PostPersonNotificationQuery,System.Threading.CancellationToken)">
+            <summary>
+            Add notification to person
+            </summary>
+            <param name="query"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.NotificationController.SendMessage(MagiClick.Application.Notification.Commands.Get.GetPersonNotificationQuery,System.Threading.CancellationToken)">
+            <summary>
+            Send notificaiton to person
+            </summary>
+            <param name="query"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagiClick.Api.Controllers.NotificationTypeController">
+            <summary>
+            NotificationType
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.NotificationTypeController.GetNotificationTypes(System.Threading.CancellationToken)">
+            <summary>
+            Get all notification Types
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagiClick.Api.Controllers.PersonController">
+            <summary>
+            Person
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.PersonController.PostPerson(MagiClick.Application.People.Commands.Post.PostPersonQuery,System.Threading.CancellationToken)">
+            <summary>
+            Insert Person
+            </summary>
+            <param name="query"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MagiClick.Api.Controllers.PersonController.GetPeople(System.Threading.CancellationToken)">
+            <summary>
+            Get all people
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagiClick.Api.Filters.ApiExceptionFilterAttribute">
+            <summary>
+            Exception filters
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Filters.ApiExceptionFilterAttribute.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Filters.ApiExceptionFilterAttribute.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            On exception event
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:MagiClick.Api.Program">
+            <summary>
+            Starter
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Program.Main(System.String[])">
+            <summary>
+            Main function
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MagiClick.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            WebHost builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MagiClick.Api.Services.CurrentUserService">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Services.CurrentUserService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="P:MagiClick.Api.Services.CurrentUserService.UserId">
+            <summary>
+            Current userId
+            </summary>
+        </member>
+        <member name="T:MagiClick.Api.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:MagiClick.Api.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:MagiClick.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:MagiClick.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

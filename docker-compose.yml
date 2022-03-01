@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  sql-server-db:
+    container_name: sql-server-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "Admin_1988"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "21433:1433"
+    restart: unless-stopped
+    networks:
+      - webnet
+
+  webapi:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: src/Apps/MagiClick.Api/Dockerfile
+    ports:
+      #- "5006:443"
+      - "5005:80"
+    environment:
+      #- ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
+      #- ASPNETCORE_HTTPS_PORT=5006
+      #- ASPNETCORE_Kestrel__Certificates__Default__Password=Admin_1988
+      #- ASPNETCORE_Kestrel__Certificates__Default__Path=/https/magiclick.pfx
+      - "UseInMemoryDatabase=false"
+      - "ConnectionStrings__DefaultConnection=Server=sql-server-db;Database=MagiClickDb;User=sa;Password=Admin_1988;MultipleActiveResultSets=true"
+      - "IdentityServer__Key__Type=Development"
+    #volumes:
+      #- ./https/magiclick.pfx:/https/magiclick.pfx:ro
+    restart: on-failure
+    networks:
+      - webnet
+    depends_on:
+      - sql-server-db
+   
+
+volumes:
+  data01:
+    driver: local
+
+networks:
+  webnet:
+    driver: bridge

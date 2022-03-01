@@ -1,0 +1,10 @@
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\bin\Debug\netstandard2.1\CleanArchitecture.Domain.deps.json
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\bin\Debug\netstandard2.1\CleanArchitecture.Domain.dll
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\bin\Debug\netstandard2.1\CleanArchitecture.Domain.pdb
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.csproj.AssemblyReference.cache
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.AssemblyInfo.cs
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.dll
+C:\Users\Omid\Downloads\CleanArchitecture-master\CleanArchitecture-master\src\Common\CleanArchitecture.Domain\obj\Debug\netstandard2.1\CleanArchitecture.Domain.pdb

@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D638410D-08F3-4042-85CD-1A12F58C06D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D2A70E84-194F-4531-AA81-82729A26F364}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{EDD10C6A-1376-4ED1-99F6-E069CF82ED5E}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagiClick.Application", "src\Common\MagiClick.Application\MagiClick.Application.csproj", "{A083B26F-44B1-42E8-875B-B361B5308394}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagiClick.Domain", "src\Common\MagiClick.Domain\MagiClick.Domain.csproj", "{EB034E9A-1B1C-4A0A-B539-841A7CDC6224}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagiClick.Infrastructure", "src\Common\MagiClick.Infrastructure\MagiClick.Infrastructure.csproj", "{15E69531-742F-41E9-B4B0-AABE3D1D73DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagiClick.Api", "src\Apps\MagiClick.Api\MagiClick.Api.csproj", "{8656D40E-FBFA-42B1-A26B-789276D31296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A083B26F-44B1-42E8-875B-B361B5308394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A083B26F-44B1-42E8-875B-B361B5308394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A083B26F-44B1-42E8-875B-B361B5308394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A083B26F-44B1-42E8-875B-B361B5308394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB034E9A-1B1C-4A0A-B539-841A7CDC6224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB034E9A-1B1C-4A0A-B539-841A7CDC6224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB034E9A-1B1C-4A0A-B539-841A7CDC6224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB034E9A-1B1C-4A0A-B539-841A7CDC6224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E69531-742F-41E9-B4B0-AABE3D1D73DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E69531-742F-41E9-B4B0-AABE3D1D73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E69531-742F-41E9-B4B0-AABE3D1D73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E69531-742F-41E9-B4B0-AABE3D1D73DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8656D40E-FBFA-42B1-A26B-789276D31296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8656D40E-FBFA-42B1-A26B-789276D31296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8656D40E-FBFA-42B1-A26B-789276D31296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8656D40E-FBFA-42B1-A26B-789276D31296}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D638410D-08F3-4042-85CD-1A12F58C06D8} = {D2A70E84-194F-4531-AA81-82729A26F364}
+		{27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0} = {D2A70E84-194F-4531-AA81-82729A26F364}
+		{A083B26F-44B1-42E8-875B-B361B5308394} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{EB034E9A-1B1C-4A0A-B539-841A7CDC6224} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{15E69531-742F-41E9-B4B0-AABE3D1D73DE} = {27A946BF-09D5-4B8D-B71F-BE4E6FCEACF0}
+		{8656D40E-FBFA-42B1-A26B-789276D31296} = {D638410D-08F3-4042-85CD-1A12F58C06D8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35E1D188-84DC-4673-B815-9E76A22A070C}
+	EndGlobalSection
+EndGlobal
